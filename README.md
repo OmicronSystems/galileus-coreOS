@@ -1,4 +1,4 @@
-# galileus-kernel
+# Project Galileus Core OS
 Core OS for our x86_64 Operating Systems project.
 
 <b>Including:</b>
