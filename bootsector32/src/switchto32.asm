@@ -1,6 +1,6 @@
 ;
 ;	PROTECTED MODE SWITCH (FROM 16 BIT TO 32 BIT)
-;	32 BIT MODE BOOT SECTOR - [SEP 26 2018]
+;	32 BIT MODE BOOT SECTOR - [SEP 27 2018]
 ;	Copyright 2018 Francesco Grecucci and Omicron Systems Organization
 ;	NO WARRANTY. Licensed under the GNU General Public License version 2
 ;   ____  __  __ _____ _____ _____   ____  _   _    _______     _______ _______ ______ __  __  _____ 
@@ -35,7 +35,7 @@ switch_to_pm:
 init_pm:
     mov ax, DATA_SEG            ; Nov in PM, our old segments are meaningless,
     mov ds, ax                  ; so we point our segments registers to the
-    mov ss, ax                  ; data selector we defined in our GDT
+    ;mov ss, ax                  ; data selector we defined in our GDT
     mov es, ax
     mov fs, ax
     mov gs, ax
@@ -43,4 +43,4 @@ init_pm:
     mov ebp, 0x90000            ; Update our stack position so it is right
     mov esp, ebp                ; at the top of the free space.
     
-    call init_pm               ; Finally, call some well-known label. 
+    ;call init_pm               ; Finally, call some well-known label. 
