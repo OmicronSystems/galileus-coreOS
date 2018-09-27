@@ -1,4 +1,4 @@
-# Project Galileus Core OS <b>[work in progress!!!]</b>
+# Project Galileus Core OS -- Work in Progress!
 Core OS for our x86_64 Operating Systems projects.                                                                                              
 
 <b>Including:</b>
