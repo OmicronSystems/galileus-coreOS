@@ -1,5 +1,5 @@
 # Project Galileus Core OS
-Core OS for our x86_64 Operating Systems project.                                                                                              
+Core OS for our x86_64 Operating Systems projects.                                                                                              
 
 <b>Including:</b>
 <ol>
