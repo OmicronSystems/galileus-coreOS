@@ -10,11 +10,20 @@
 ; | |__| | |  | |_| || |____| | \ \| |__| | |\  |  ____) |  | |  ____) |  | |  | |____| |  | |____) |
 ;  \____/|_|  |_|_____\_____|_|  \_\\____/|_| \_| |_____/   |_| |_____/   |_|  |______|_|  |_|_____/ 
 
-print_string:
-	pusha				; push all registers values to the stack
-	mov bx, 10			
-	add bx, 20
-	mov ah, 0x0e		; int=10/ah=0x0e -> BIOS tele-type output
-	int 0x10			; print the character in al
-	popa				; restore the original value
+clrscr:
+	mov ah, 00h		; INT 10H 00H: Set Video Mode
+	mov al, 3		; 80x25 char
+	int 10h
 	ret
+
+vga256:
+	mov ah, 00h		;INT 10H 00H: Set Video Mode
+	mov al, 13h		;640x480 256 colors
+	int 10h
+	ret
+
+printf:
+	pusha
+	mov ax, 1300h
+	mov bl, 07h
+	
