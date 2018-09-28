@@ -1,6 +1,6 @@
 ;
 ;	PROTECTED MODE SWITCH (FROM 16 BIT TO 32 BIT)
-;	32 BIT MODE BOOT SECTOR - [SEP 27 2018]
+;	32 BIT MODE BOOT SECTOR - [SEP 28 2018]
 ;	Copyright 2018 Francesco Grecucci and Omicron Systems Organization
 ;	NO WARRANTY. Licensed under the GNU General Public License version 2
 ;   ____  __  __ _____ _____ _____   ____  _   _    _______     _______ _______ ______ __  __  _____ 
