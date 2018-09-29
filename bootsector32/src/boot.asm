@@ -1,6 +1,6 @@
 ;
 ;	BOOT SECTOR MAIN SOURCE CODE
-;	32 BIT MODE BOOT SECTOR - [SEP 28 2018]
+;	32 BIT MODE BOOT SECTOR - [SEP 29 2018] - Version 0.73a
 ;	Copyright 2018 Francesco Grecucci and Omicron Systems Organization
 ;	NO WARRANTY. Licensed under the GNU General Public License version 2
 ;   ____  __  __ _____ _____ _____   ____  _   _    _______     _______ _______ ______ __  __  _____ 
