@@ -19,10 +19,10 @@
     call switch_to_pm;	; Switch to 32 bit protected mode, we'll never come back here.
 	jmp $
 	
-	%include "g:\boot-test\printf16.asm"
-    %include "g:\boot-test\gdt.asm"
-    %include "g:\boot-test\switchto32.asm"
-    %include "g:\boot-test\printf.asm"
+	%include "printf16.asm"
+    %include "gdt.asm"
+    %include "switchto32.asm"
+    %include "printf.asm"
 	times 510-($-$$) db 0
 	dw 0xaa55
 	
