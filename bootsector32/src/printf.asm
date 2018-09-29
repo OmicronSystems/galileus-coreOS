@@ -1,4 +1,4 @@
-;
+                                                                                                                                                     ;
 ;	CODE FOR PRINTING STRINGS IN 32 BIT PROTECTED MODE
 ;	32 BIT MODE BOOT SECTOR - [SEP 26 2018]
 ;	Copyright 2018 Francesco Grecucci and Omicron Systems Organization
@@ -15,7 +15,7 @@
 [bits 32]
 
 VIDEO_MEMORY equ 0xb8000
-WHITE_ON_BLACK equ 0x0f
+WHITE_ON_BLACK equ 0fh
 
 print_string_pm:
 	pusha
