@@ -1,4 +1,4 @@
-# Project Galileus Core OS -- Work in Progress!
+# Project Bismuth Core OS -- Work in Progress!
 Core OS for our x86_64 Operating Systems projects.                                                                                              
 
 <b>Including:</b>
