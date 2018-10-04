@@ -36,7 +36,7 @@ kernel.bin: kernel/kernel_entry.o ${OBJ}
 # Generic rule for compiling C code to an object file
 # For simplicity, C files depend on all header files.
 %.o : %.c ${HEADERS}
-	gcc -ffreestanding -c $< -o $@
+	gcc -Wall -Wno-int-conversion -fstrength-reduce -fomit-frame-pointer -finline-functions -nostdlib -ffreestanding -I./include -std=gnu99 -g -ggdb -c $< -o $@
 
 # Assemble the kernel_entry.
 %.o : %.asm

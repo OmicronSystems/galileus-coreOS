@@ -11,7 +11,7 @@
 ;  \____/|_|  |_|_____\_____|_|  \_\\____/|_| \_| |_____/   |_| |_____/   |_|  |______|_|  |_|_____/ 
 
 [bits 32]
-[extern main]			; Declare that we will be referencing the external symbol "main",
+[extern _start]			; Declare that we will be referencing the external symbol "_start",
 				; so the linker can substitute the final address
-call main			; invoke main() in our C kernel
+call _start			; invoke _start() in our C kernel
 jmp $

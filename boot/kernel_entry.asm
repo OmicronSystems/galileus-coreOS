@@ -1,6 +1,6 @@
 ;
 ;	KERNEL ENTRY POINT CODE
-;	32 BIT MODE BOOT SECTOR - [OCT 03 2018] - Version 0.73a
+;	32 BIT MODE BOOT SECTOR - [OCT 04 2018] - Version 0.73a
 ;	Copyright 2018 Francesco Grecucci and Omicron Systems Organization
 ;	NO WARRANTY. Licensed under the GNU General Public License version 2
 ;   ____  __  __ _____ _____ _____   ____  _   _    _______     _______ _______ ______ __  __  _____ 
@@ -10,8 +10,9 @@
 ; | |__| | |  | |_| || |____| | \ \| |__| | |\  |  ____) |  | |  ____) |  | |  | |____| |  | |____) |
 ;  \____/|_|  |_|_____\_____|_|  \_\\____/|_| \_| |_____/   |_| |_____/   |_|  |______|_|  |_|_____/ 
 
-[extern main]		; Declare that we will be referencing the external symbol "main",
+[bits 32]	
+[extern _start]		; Declare that we will be referencing the external symbol "main",
 					; so the linker can substitute the final address
-call main			; invoke main() in our C kernel
+call _start			; invoke main() in our C kernel
 jmp $
 	
